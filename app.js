@@ -7,7 +7,7 @@ app.use(express.static('public'));
 app.use('/static', express.static(path.join(__dirname, 'public')))
 
 app.get('/', (req, res) => {
-    res.sendFile(__dirname + '/public/html/index.html')
+    res.sendFile(__dirname + '/public/index.html')
   })
 
 app.listen(port, () => {
